@@ -1,0 +1,4 @@
+Log file created at: 2022/02/21 23:31:12
+Running on machine: 3721b56fa86a
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0221 23:31:12.265759    83 cache.cpp:58] invalid cache path serving_server//cube_cache

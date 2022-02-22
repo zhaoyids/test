@@ -1,0 +1,205 @@
+Log file created at: 2022/02/22 07:14:19
+Running on machine: 3721b56fa86a
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0222 07:14:19.695731   324 resource.cpp:98] Successfully proc initialized mempool wrapper
+I0222 07:14:19.697062   324 infer.cpp:410] model_toolkit_conf.engines(0).name: general_infer_0
+W0222 07:14:19.697086   324 infer.cpp:43] Succ load model:serving_server/
+W0222 07:14:19.697099   324 infer.cpp:235] Succ proc initialize version engine: 18446744073709551615
+W0222 07:14:19.697151   324 infer.cpp:200] Succ proc initialize engine: general_infer_0
+W0222 07:14:19.697170   324 infer.cpp:430] Succ proc initialize engine: general_infer_0
+W0222 07:14:19.697211   324 kv_manager.h:70] general_infer_0: 
+W0222 07:14:19.697223   324 kv_manager.h:72] Succ proc initialize kvmanager for engine: general_infer_0
+I0222 07:14:19.698009   324 dag.cpp:158] DAG: workflow1, Op Num: 3
+I0222 07:14:19.698024   324 dag.cpp:161] OP-1-general_reader_0-GeneralReaderOp depends: 0
+I0222 07:14:19.698031   324 dag.cpp:161] OP-2-general_infer_0-GeneralInferOp depends: 1
+I0222 07:14:19.698038   324 dag.cpp:166]  general_reader_0 0
+I0222 07:14:19.698045   324 dag.cpp:161] OP-3-general_response_0-GeneralResponseOp depends: 1
+I0222 07:14:19.698051   324 dag.cpp:166]  general_infer_0 0
+I0222 07:14:19.698057   324 dag.cpp:169] 
+I0222 07:14:19.698065   324 manager.h:86] Succ init item:workflow1 from conf:workdir_9292/workflow.prototxt, at:0!
+W0222 07:14:19.698132   324 service.cpp:50] Succ get merger: default for service: GeneralModelService
+I0222 07:14:19.698602   324 service.cpp:62] service[GeneralModelService], enable_map_request_to_workflow[0].
+I0222 07:14:19.698686   324 predictor_metric.h:170] try to regist latency metric[workflow_GeneralModelService_workflow1].
+I0222 07:14:19.698741   324 predictor_metric.h:175] succ to regist latency metric[workflow_GeneralModelService_workflow1].
+I0222 07:14:19.698751   324 predictor_metric.h:170] try to regist latency metric[stage_GeneralModelService_workflow1_0].
+I0222 07:14:19.698794   324 predictor_metric.h:175] succ to regist latency metric[stage_GeneralModelService_workflow1_0].
+I0222 07:14:19.698803   324 predictor_metric.h:170] try to regist latency metric[op_GeneralModelService_workflow1_0_general_reader_0].
+I0222 07:14:19.698844   324 predictor_metric.h:175] succ to regist latency metric[op_GeneralModelService_workflow1_0_general_reader_0].
+I0222 07:14:19.698854   324 predictor_metric.h:170] try to regist latency metric[stage_GeneralModelService_workflow1_1].
+I0222 07:14:19.698894   324 predictor_metric.h:175] succ to regist latency metric[stage_GeneralModelService_workflow1_1].
+I0222 07:14:19.698901   324 predictor_metric.h:170] try to regist latency metric[op_GeneralModelService_workflow1_1_general_infer_0].
+I0222 07:14:19.698942   324 predictor_metric.h:175] succ to regist latency metric[op_GeneralModelService_workflow1_1_general_infer_0].
+I0222 07:14:19.698951   324 predictor_metric.h:170] try to regist latency metric[stage_GeneralModelService_workflow1_2].
+I0222 07:14:19.699031   324 predictor_metric.h:175] succ to regist latency metric[stage_GeneralModelService_workflow1_2].
+I0222 07:14:19.699043   324 predictor_metric.h:170] try to regist latency metric[op_GeneralModelService_workflow1_2_general_response_0].
+I0222 07:14:19.699085   324 predictor_metric.h:175] succ to regist latency metric[op_GeneralModelService_workflow1_2_general_response_0].
+I0222 07:14:19.699095   324 service.cpp:127] Succ load infer_service: GeneralModelService!
+I0222 07:14:19.699102   324 manager.h:184] Succ init item:GeneralModelService from conf:workdir_9292/infer_service.prototxt, at:0!
+I0222 07:14:19.700405   326 server.cpp:148] Entrence reload worker, interval_s: 10
+I0222 07:14:19.700430   326 server.cpp:151] Begin reload framework...
+W0222 07:14:19.700444   326 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0222 07:14:19.700456   326 manager.h:131] Finish reload 1 workflow(s)
+W0222 07:14:19.713830   327 memory.cpp:78] Succ thread initialize mempool wrapper
+W0222 07:14:19.713871   328 memory.cpp:78] Succ thread initialize mempool wrapper
+W0222 07:14:19.714031   330 memory.cpp:78] Succ thread initialize mempool wrapper
+W0222 07:14:19.713948   329 memory.cpp:78] Succ thread initialize mempool wrapper
+W0222 07:14:19.714035   328 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0222 07:14:19.713881   327 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0222 07:14:19.714049   331 memory.cpp:78] Succ thread initialize mempool wrapper
+W0222 07:14:19.714125   332 memory.cpp:78] Succ thread initialize mempool wrapper
+W0222 07:14:19.715153   332 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0222 07:14:19.714839   329 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0222 07:14:19.715237   334 memory.cpp:78] Succ thread initialize mempool wrapper
+W0222 07:14:19.715267   334 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0222 07:14:19.715109   331 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0222 07:14:19.715349   335 memory.cpp:78] Succ thread initialize mempool wrapper
+W0222 07:14:19.714179   333 memory.cpp:78] Succ thread initialize mempool wrapper
+W0222 07:14:19.714946   328 infer.h:431] tid:328 Loading clone model ...
+W0222 07:14:19.714179   330 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0222 07:14:19.715363   336 memory.cpp:78] Succ thread initialize mempool wrapper
+W0222 07:14:19.715544   336 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0222 07:14:19.715406   335 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0222 07:14:19.715449   333 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0222 07:14:19.715467   337 memory.cpp:78] Succ thread initialize mempool wrapper
+W0222 07:14:19.715690   337 resource.cpp:302] Successfully thread initialized mempool wrapper
+I0222 07:14:19.819705   328 analysis_predictor.cc:668] ir_optim is turned off, no IR pass will be executed
+I0222 07:14:20.826599   328 memory_optimize_pass.cc:214] Cluster name : generate_proposals_0.tmp_1  size: 4
+I0222 07:14:20.826644   328 memory_optimize_pass.cc:214] Cluster name : generate_proposals_2.tmp_1  size: 4
+I0222 07:14:20.826654   328 memory_optimize_pass.cc:214] Cluster name : image  size: 12
+I0222 07:14:20.826663   328 memory_optimize_pass.cc:214] Cluster name : roi_align_6.tmp_0  size: 50176
+I0222 07:14:20.826670   328 memory_optimize_pass.cc:214] Cluster name : generate_proposals_1.tmp_1  size: 4
+I0222 07:14:20.826678   328 memory_optimize_pass.cc:214] Cluster name : roi_align_7.tmp_0  size: 50176
+I0222 07:14:20.826686   328 memory_optimize_pass.cc:214] Cluster name : 6_36.add.output.5.tmp_1  size: 4096
+I0222 07:14:20.826694   328 memory_optimize_pass.cc:214] Cluster name : im_shape  size: 12
+I0222 07:14:20.826701   328 memory_optimize_pass.cc:214] Cluster name : bbox_head_conv2.output.1.tmp_1  size: 50176
+I0222 07:14:20.826709   328 memory_optimize_pass.cc:214] Cluster name : im_info  size: 12
+I0222 07:14:20.826717   328 memory_optimize_pass.cc:214] Cluster name : generate_proposals_3.tmp_1  size: 4
+I0222 07:14:20.826725   328 memory_optimize_pass.cc:214] Cluster name : roi_align_9.tmp_0  size: 50176
+I0222 07:14:20.826732   328 memory_optimize_pass.cc:214] Cluster name : 5_8.add.output.5.tmp_1  size: 2048
+I0222 07:14:20.826740   328 memory_optimize_pass.cc:214] Cluster name : rpn_cls_logits_fpn6.tmp_1  size: 12
+I0222 07:14:20.826747   328 memory_optimize_pass.cc:214] Cluster name : 4_3.add.output.5.tmp_1  size: 1024
+I0222 07:14:20.826756   328 memory_optimize_pass.cc:214] Cluster name : _generated_var_23  size: 1024
+I0222 07:14:20.826763   328 memory_optimize_pass.cc:214] Cluster name : concat_1.tmp_0  size: 50176
+I0222 07:14:20.826771   328 memory_optimize_pass.cc:214] Cluster name : generate_proposals_1.tmp_0  size: 16
+I0222 07:14:20.826778   328 memory_optimize_pass.cc:214] Cluster name : distribute_fpn_proposals_2.tmp_1  size: 16
+I0222 07:14:20.826786   328 memory_optimize_pass.cc:214] Cluster name : generate_proposals_2.tmp_0  size: 16
+I0222 07:14:20.827013   328 memory_optimize_pass.cc:214] Cluster name : rpn_cls_prob_fpn6.tmp_0  size: 12
+I0222 07:14:21.275468   328 analysis_predictor.cc:717] ======= optimize end =======
+I0222 07:14:21.277189   328 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0222 07:14:21.277220   328 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0222 07:14:21.277231   328 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0222 07:14:21.291857   328 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+I0222 07:14:21.292237   328 cache.cpp:48] cube cache is loading data, path: serving_server//cube_cache
+E0222 07:14:21.292266   328 cache.cpp:58] invalid cache path serving_server//cube_cache
+W0222 07:14:21.292497   328 infer.h:444] create cube cache[0] done.
+W0222 07:14:21.292512   328 infer.h:478] [328] Reload clone model and cube cache done. switching to current_idx[0]
+W0222 07:14:21.292558   328 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0222 07:14:21.292573   327 infer.h:431] tid:327 Loading clone model ...
+W0222 07:14:21.292579   328 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+I0222 07:14:21.294152   327 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0222 07:14:21.294174   327 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0222 07:14:21.294184   327 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0222 07:14:21.304369   324 server.cpp:1046] Server[baidu::paddle_serving::predictor::general_model::GeneralModelServiceImpl] is serving on port=9292.
+I0222 07:14:21.304409   324 server.cpp:1049] Check out http://3721b56fa86a:9292 in web browser.
+I0222 07:14:21.314733   327 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0222 07:14:21.315132   327 infer.h:471] tid:327 clone caches done
+W0222 07:14:21.315160   327 infer.h:478] [327] Reload clone model and cube cache done. switching to current_idx[0]
+W0222 07:14:21.315205   327 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0222 07:14:21.315225   327 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0222 07:14:21.315292   332 infer.h:431] tid:332 Loading clone model ...
+I0222 07:14:21.316799   332 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0222 07:14:21.316823   332 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0222 07:14:21.316885   332 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0222 07:14:21.338795   332 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0222 07:14:21.339210   332 infer.h:471] tid:332 clone caches done
+W0222 07:14:21.339239   332 infer.h:478] [332] Reload clone model and cube cache done. switching to current_idx[0]
+W0222 07:14:21.339455   332 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0222 07:14:21.339481   332 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0222 07:14:21.339506   329 infer.h:431] tid:329 Loading clone model ...
+I0222 07:14:21.340981   329 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0222 07:14:21.341002   329 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0222 07:14:21.341012   329 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0222 07:14:21.361850   329 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0222 07:14:21.362280   329 infer.h:471] tid:329 clone caches done
+W0222 07:14:21.362483   329 infer.h:478] [329] Reload clone model and cube cache done. switching to current_idx[0]
+W0222 07:14:21.362532   329 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0222 07:14:21.362553   329 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0222 07:14:21.362586   334 infer.h:431] tid:334 Loading clone model ...
+I0222 07:14:21.363963   334 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0222 07:14:21.363992   334 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0222 07:14:21.364003   334 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0222 07:14:21.387234   334 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0222 07:14:21.387884   334 infer.h:471] tid:334 clone caches done
+W0222 07:14:21.388051   334 infer.h:478] [334] Reload clone model and cube cache done. switching to current_idx[0]
+W0222 07:14:21.388109   334 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0222 07:14:21.388130   334 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0222 07:14:21.388171   331 infer.h:431] tid:331 Loading clone model ...
+I0222 07:14:21.389720   331 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0222 07:14:21.389744   331 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0222 07:14:21.389755   331 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0222 07:14:21.413105   331 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0222 07:14:21.413693   331 infer.h:471] tid:331 clone caches done
+W0222 07:14:21.413729   331 infer.h:478] [331] Reload clone model and cube cache done. switching to current_idx[0]
+W0222 07:14:21.413780   331 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0222 07:14:21.413802   331 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0222 07:14:21.413839   330 infer.h:431] tid:330 Loading clone model ...
+I0222 07:14:21.415433   330 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0222 07:14:21.415457   330 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0222 07:14:21.415491   330 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0222 07:14:21.438694   330 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0222 07:14:21.439122   330 infer.h:471] tid:330 clone caches done
+W0222 07:14:21.439152   330 infer.h:478] [330] Reload clone model and cube cache done. switching to current_idx[0]
+W0222 07:14:21.439203   330 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0222 07:14:21.439224   330 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0222 07:14:21.439261   336 infer.h:431] tid:336 Loading clone model ...
+I0222 07:14:21.440842   336 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0222 07:14:21.440867   336 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0222 07:14:21.440877   336 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0222 07:14:21.463686   336 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0222 07:14:21.464195   336 infer.h:471] tid:336 clone caches done
+W0222 07:14:21.464231   336 infer.h:478] [336] Reload clone model and cube cache done. switching to current_idx[0]
+W0222 07:14:21.464277   336 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0222 07:14:21.464293   335 infer.h:431] tid:335 Loading clone model ...
+W0222 07:14:21.464298   336 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+I0222 07:14:21.465914   335 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0222 07:14:21.465939   335 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0222 07:14:21.465950   335 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0222 07:14:21.489646   335 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0222 07:14:21.490128   335 infer.h:471] tid:335 clone caches done
+W0222 07:14:21.490177   335 infer.h:478] [335] Reload clone model and cube cache done. switching to current_idx[0]
+W0222 07:14:21.490239   335 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0222 07:14:21.490262   335 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0222 07:14:21.490309   333 infer.h:431] tid:333 Loading clone model ...
+I0222 07:14:21.491917   333 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0222 07:14:21.491943   333 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0222 07:14:21.491955   333 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0222 07:14:21.517462   333 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0222 07:14:21.517932   333 infer.h:471] tid:333 clone caches done
+W0222 07:14:21.518208   333 infer.h:478] [333] Reload clone model and cube cache done. switching to current_idx[0]
+W0222 07:14:21.518309   333 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0222 07:14:21.518334   333 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0222 07:14:21.518374   337 infer.h:431] tid:337 Loading clone model ...
+I0222 07:14:21.520067   337 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0222 07:14:21.520262   337 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0222 07:14:21.520293   337 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0222 07:14:21.543617   337 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0222 07:14:21.544162   337 infer.h:471] tid:337 clone caches done
+W0222 07:14:21.544196   337 infer.h:478] [337] Reload clone model and cube cache done. switching to current_idx[0]
+W0222 07:14:21.544212   337 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0222 07:14:21.544224   337 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+I0222 07:14:29.700629   326 server.cpp:151] Begin reload framework...
+W0222 07:14:29.700691   326 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0222 07:14:29.700709   326 manager.h:131] Finish reload 1 workflow(s)
+I0222 07:14:39.700894   326 server.cpp:151] Begin reload framework...
+W0222 07:14:39.700951   326 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0222 07:14:39.700971   326 manager.h:131] Finish reload 1 workflow(s)
+I0222 07:14:49.701284   326 server.cpp:151] Begin reload framework...
+W0222 07:14:49.701426   326 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0222 07:14:49.702208   326 manager.h:131] Finish reload 1 workflow(s)
+I0222 07:14:59.702526   326 server.cpp:151] Begin reload framework...
+W0222 07:14:59.702598   326 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0222 07:14:59.702627   326 manager.h:131] Finish reload 1 workflow(s)
+I0222 07:15:04.264438   329 general_model_service.pb.cc:3319] (logid=0) remote_side=[127.0.0.1:45044]
+I0222 07:15:04.264494   329 general_model_service.pb.cc:3320] (logid=0) local_side=[127.0.0.1:9292]
+I0222 07:15:04.264506   329 general_model_service.pb.cc:3321] (logid=0) service_name=[GeneralModelService]
+I0222 07:15:04.267515   329 op.cpp:164] (logid=0) general_reader_0_time=[2811]

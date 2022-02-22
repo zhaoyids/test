@@ -1,0 +1,121 @@
+Log file created at: 2022/02/21 06:19:58
+Running on machine: 3721b56fa86a
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0221 06:19:58.220535   103 resource.cpp:98] Successfully proc initialized mempool wrapper
+W0221 06:19:58.222792   103 infer.cpp:43] Succ load model:serving_server/
+W0221 06:19:58.222829   103 infer.cpp:235] Succ proc initialize version engine: 18446744073709551615
+W0221 06:19:58.222859   103 infer.cpp:200] Succ proc initialize engine: general_infer_0
+W0221 06:19:58.222890   103 infer.cpp:430] Succ proc initialize engine: general_infer_0
+W0221 06:19:58.223008   103 kv_manager.h:70] general_infer_0: 
+W0221 06:19:58.223044   103 kv_manager.h:72] Succ proc initialize kvmanager for engine: general_infer_0
+W0221 06:19:58.227041   103 service.cpp:50] Succ get merger: default for service: GeneralModelService
+W0221 06:19:58.232196   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:19:58.255187   106 memory.cpp:78] Succ thread initialize mempool wrapper
+W0221 06:19:58.255282   106 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0221 06:19:58.255972   106 infer.h:431] tid:106 Loading clone model ...
+W0221 06:19:58.255447   108 memory.cpp:78] Succ thread initialize mempool wrapper
+W0221 06:19:58.256915   108 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0221 06:19:58.255689   109 memory.cpp:78] Succ thread initialize mempool wrapper
+W0221 06:19:58.255816   110 memory.cpp:78] Succ thread initialize mempool wrapper
+W0221 06:19:58.255337   107 memory.cpp:78] Succ thread initialize mempool wrapper
+W0221 06:19:58.257131   109 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0221 06:19:58.257270   110 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0221 06:19:58.257280   107 resource.cpp:302] Successfully thread initialized mempool wrapper
+E0221 06:19:59.718636   106 cache.cpp:58] invalid cache path serving_server//cube_cache
+W0221 06:19:59.718847   106 infer.h:444] create cube cache[0] done.
+W0221 06:19:59.718861   106 infer.h:478] [106] Reload clone model and cube cache done. switching to current_idx[0]
+W0221 06:19:59.718904   106 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0221 06:19:59.718923   106 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0221 06:19:59.718955   108 infer.h:431] tid:108 Loading clone model ...
+W0221 06:19:59.741663   108 infer.h:471] tid:108 clone caches done
+W0221 06:19:59.741688   108 infer.h:478] [108] Reload clone model and cube cache done. switching to current_idx[0]
+W0221 06:19:59.741732   108 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0221 06:19:59.741751   108 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0221 06:19:59.741786   109 infer.h:431] tid:109 Loading clone model ...
+W0221 06:19:59.768098   109 infer.h:471] tid:109 clone caches done
+W0221 06:19:59.768119   109 infer.h:478] [109] Reload clone model and cube cache done. switching to current_idx[0]
+W0221 06:19:59.768163   109 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0221 06:19:59.768183   109 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0221 06:19:59.768206   110 infer.h:431] tid:110 Loading clone model ...
+W0221 06:19:59.790822   110 infer.h:471] tid:110 clone caches done
+W0221 06:19:59.790843   110 infer.h:478] [110] Reload clone model and cube cache done. switching to current_idx[0]
+W0221 06:19:59.790885   110 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0221 06:19:59.790905   110 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0221 06:19:59.790940   107 infer.h:431] tid:107 Loading clone model ...
+W0221 06:19:59.813557   107 infer.h:471] tid:107 clone caches done
+W0221 06:19:59.813582   107 infer.h:478] [107] Reload clone model and cube cache done. switching to current_idx[0]
+W0221 06:19:59.813596   107 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0221 06:19:59.813607   107 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0221 06:20:08.232504   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:20:18.232792   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:20:28.233057   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:20:38.233311   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:20:48.233530   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:20:58.233772   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:21:08.234074   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:21:18.234373   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:21:28.234911   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:21:38.235150   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:21:48.235648   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:21:58.235975   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:22:08.236189   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:22:18.236497   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:22:28.236932   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:22:38.237195   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:22:48.237447   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:22:58.237744   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:23:08.238240   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:23:18.238726   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:23:28.239508   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:23:38.240048   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:23:48.240609   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:23:58.241125   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:24:08.241624   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:24:18.242029   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:24:28.242449   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:24:38.243227   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:24:48.243713   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:24:58.244192   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:25:08.244421   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:25:18.244666   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:25:28.245128   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:25:38.245472   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:25:48.246024   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:25:58.246486   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:26:08.246868   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:26:18.247259   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:26:28.247653   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:26:38.248159   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:26:48.248750   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:26:58.249056   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:27:08.249282   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:27:18.249863   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:27:28.250470   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:27:38.250842   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:27:48.251446   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:27:58.251929   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:28:08.252318   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:28:18.252554   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:28:28.252830   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:28:38.253059   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:28:48.253579   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:28:58.253837   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:29:08.254384   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:29:18.254704   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:29:28.255110   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:29:38.255779   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:29:48.256211   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:29:58.256788   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:30:08.257297   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:30:18.257580   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:30:28.258225   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:30:38.258778   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:30:48.259640   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:30:58.259929   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:31:08.260233   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:31:18.260489   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:31:28.260870   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:31:38.261147   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:31:48.261554   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:31:58.262069   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+W0221 06:32:08.262395   105 infer.cpp:287] Succ reload version engine: 18446744073709551615

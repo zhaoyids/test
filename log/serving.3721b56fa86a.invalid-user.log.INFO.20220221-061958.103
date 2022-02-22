@@ -1,0 +1,342 @@
+Log file created at: 2022/02/21 06:19:58
+Running on machine: 3721b56fa86a
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0221 06:19:58.220535   103 resource.cpp:98] Successfully proc initialized mempool wrapper
+I0221 06:19:58.222720   103 infer.cpp:410] model_toolkit_conf.engines(0).name: general_infer_0
+W0221 06:19:58.222792   103 infer.cpp:43] Succ load model:serving_server/
+W0221 06:19:58.222829   103 infer.cpp:235] Succ proc initialize version engine: 18446744073709551615
+W0221 06:19:58.222859   103 infer.cpp:200] Succ proc initialize engine: general_infer_0
+W0221 06:19:58.222890   103 infer.cpp:430] Succ proc initialize engine: general_infer_0
+W0221 06:19:58.223008   103 kv_manager.h:70] general_infer_0: 
+W0221 06:19:58.223044   103 kv_manager.h:72] Succ proc initialize kvmanager for engine: general_infer_0
+I0221 06:19:58.226557   103 dag.cpp:158] DAG: workflow1, Op Num: 3
+I0221 06:19:58.226609   103 dag.cpp:161] OP-1-general_reader_0-GeneralReaderOp depends: 0
+I0221 06:19:58.226634   103 dag.cpp:161] OP-2-general_infer_0-GeneralInferOp depends: 1
+I0221 06:19:58.226655   103 dag.cpp:166]  general_reader_0 0
+I0221 06:19:58.226711   103 dag.cpp:161] OP-3-general_response_0-GeneralResponseOp depends: 1
+I0221 06:19:58.226739   103 dag.cpp:166]  general_infer_0 0
+I0221 06:19:58.226759   103 dag.cpp:169] 
+I0221 06:19:58.226783   103 manager.h:86] Succ init item:workflow1 from conf:workdir_9494/workflow.prototxt, at:0!
+W0221 06:19:58.227041   103 service.cpp:50] Succ get merger: default for service: GeneralModelService
+I0221 06:19:58.227993   103 service.cpp:62] service[GeneralModelService], enable_map_request_to_workflow[0].
+I0221 06:19:58.228242   103 predictor_metric.h:170] try to regist latency metric[workflow_GeneralModelService_workflow1].
+I0221 06:19:58.228579   103 predictor_metric.h:175] succ to regist latency metric[workflow_GeneralModelService_workflow1].
+I0221 06:19:58.228637   103 predictor_metric.h:170] try to regist latency metric[stage_GeneralModelService_workflow1_0].
+I0221 06:19:58.228829   103 predictor_metric.h:175] succ to regist latency metric[stage_GeneralModelService_workflow1_0].
+I0221 06:19:58.228868   103 predictor_metric.h:170] try to regist latency metric[op_GeneralModelService_workflow1_0_general_reader_0].
+I0221 06:19:58.229050   103 predictor_metric.h:175] succ to regist latency metric[op_GeneralModelService_workflow1_0_general_reader_0].
+I0221 06:19:58.229095   103 predictor_metric.h:170] try to regist latency metric[stage_GeneralModelService_workflow1_1].
+I0221 06:19:58.229272   103 predictor_metric.h:175] succ to regist latency metric[stage_GeneralModelService_workflow1_1].
+I0221 06:19:58.229310   103 predictor_metric.h:170] try to regist latency metric[op_GeneralModelService_workflow1_1_general_infer_0].
+I0221 06:19:58.229552   103 predictor_metric.h:175] succ to regist latency metric[op_GeneralModelService_workflow1_1_general_infer_0].
+I0221 06:19:58.229612   103 predictor_metric.h:170] try to regist latency metric[stage_GeneralModelService_workflow1_2].
+I0221 06:19:58.229792   103 predictor_metric.h:175] succ to regist latency metric[stage_GeneralModelService_workflow1_2].
+I0221 06:19:58.229835   103 predictor_metric.h:170] try to regist latency metric[op_GeneralModelService_workflow1_2_general_response_0].
+I0221 06:19:58.230020   103 predictor_metric.h:175] succ to regist latency metric[op_GeneralModelService_workflow1_2_general_response_0].
+I0221 06:19:58.230063   103 service.cpp:127] Succ load infer_service: GeneralModelService!
+I0221 06:19:58.230095   103 manager.h:184] Succ init item:GeneralModelService from conf:workdir_9494/infer_service.prototxt, at:0!
+I0221 06:19:58.232086   105 server.cpp:148] Entrence reload worker, interval_s: 10
+I0221 06:19:58.232156   105 server.cpp:151] Begin reload framework...
+W0221 06:19:58.232196   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:19:58.232228   105 manager.h:131] Finish reload 1 workflow(s)
+W0221 06:19:58.255187   106 memory.cpp:78] Succ thread initialize mempool wrapper
+W0221 06:19:58.255282   106 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0221 06:19:58.255972   106 infer.h:431] tid:106 Loading clone model ...
+W0221 06:19:58.255447   108 memory.cpp:78] Succ thread initialize mempool wrapper
+W0221 06:19:58.256915   108 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0221 06:19:58.255689   109 memory.cpp:78] Succ thread initialize mempool wrapper
+W0221 06:19:58.255816   110 memory.cpp:78] Succ thread initialize mempool wrapper
+W0221 06:19:58.255337   107 memory.cpp:78] Succ thread initialize mempool wrapper
+W0221 06:19:58.257131   109 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0221 06:19:58.257270   110 resource.cpp:302] Successfully thread initialized mempool wrapper
+W0221 06:19:58.257280   107 resource.cpp:302] Successfully thread initialized mempool wrapper
+I0221 06:19:58.417603   106 analysis_predictor.cc:668] ir_optim is turned off, no IR pass will be executed
+I0221 06:19:59.279675   106 memory_optimize_pass.cc:214] Cluster name : generate_proposals_0.tmp_1  size: 4
+I0221 06:19:59.279714   106 memory_optimize_pass.cc:214] Cluster name : generate_proposals_2.tmp_1  size: 4
+I0221 06:19:59.279723   106 memory_optimize_pass.cc:214] Cluster name : image  size: 12
+I0221 06:19:59.279731   106 memory_optimize_pass.cc:214] Cluster name : roi_align_6.tmp_0  size: 50176
+I0221 06:19:59.279737   106 memory_optimize_pass.cc:214] Cluster name : generate_proposals_1.tmp_1  size: 4
+I0221 06:19:59.279744   106 memory_optimize_pass.cc:214] Cluster name : roi_align_7.tmp_0  size: 50176
+I0221 06:19:59.279752   106 memory_optimize_pass.cc:214] Cluster name : 6_36.add.output.5.tmp_1  size: 4096
+I0221 06:19:59.279758   106 memory_optimize_pass.cc:214] Cluster name : im_shape  size: 12
+I0221 06:19:59.279765   106 memory_optimize_pass.cc:214] Cluster name : bbox_head_conv2.output.1.tmp_1  size: 50176
+I0221 06:19:59.279772   106 memory_optimize_pass.cc:214] Cluster name : im_info  size: 12
+I0221 06:19:59.279779   106 memory_optimize_pass.cc:214] Cluster name : generate_proposals_3.tmp_1  size: 4
+I0221 06:19:59.279786   106 memory_optimize_pass.cc:214] Cluster name : roi_align_9.tmp_0  size: 50176
+I0221 06:19:59.279793   106 memory_optimize_pass.cc:214] Cluster name : 5_8.add.output.5.tmp_1  size: 2048
+I0221 06:19:59.279800   106 memory_optimize_pass.cc:214] Cluster name : rpn_cls_logits_fpn6.tmp_1  size: 12
+I0221 06:19:59.279808   106 memory_optimize_pass.cc:214] Cluster name : 4_3.add.output.5.tmp_1  size: 1024
+I0221 06:19:59.279814   106 memory_optimize_pass.cc:214] Cluster name : _generated_var_23  size: 1024
+I0221 06:19:59.279820   106 memory_optimize_pass.cc:214] Cluster name : concat_1.tmp_0  size: 50176
+I0221 06:19:59.279827   106 memory_optimize_pass.cc:214] Cluster name : generate_proposals_1.tmp_0  size: 16
+I0221 06:19:59.279834   106 memory_optimize_pass.cc:214] Cluster name : distribute_fpn_proposals_2.tmp_1  size: 16
+I0221 06:19:59.279841   106 memory_optimize_pass.cc:214] Cluster name : generate_proposals_2.tmp_0  size: 16
+I0221 06:19:59.279848   106 memory_optimize_pass.cc:214] Cluster name : rpn_cls_prob_fpn6.tmp_0  size: 12
+I0221 06:19:59.701709   106 analysis_predictor.cc:717] ======= optimize end =======
+I0221 06:19:59.703205   106 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0221 06:19:59.703229   106 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0221 06:19:59.703238   106 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0221 06:19:59.718189   106 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+I0221 06:19:59.718605   106 cache.cpp:48] cube cache is loading data, path: serving_server//cube_cache
+E0221 06:19:59.718636   106 cache.cpp:58] invalid cache path serving_server//cube_cache
+W0221 06:19:59.718847   106 infer.h:444] create cube cache[0] done.
+W0221 06:19:59.718861   106 infer.h:478] [106] Reload clone model and cube cache done. switching to current_idx[0]
+W0221 06:19:59.718904   106 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0221 06:19:59.718923   106 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0221 06:19:59.718955   108 infer.h:431] tid:108 Loading clone model ...
+I0221 06:19:59.720674   108 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0221 06:19:59.720695   108 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0221 06:19:59.720705   108 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0221 06:19:59.741132   108 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0221 06:19:59.741663   108 infer.h:471] tid:108 clone caches done
+W0221 06:19:59.741688   108 infer.h:478] [108] Reload clone model and cube cache done. switching to current_idx[0]
+W0221 06:19:59.741732   108 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0221 06:19:59.741751   108 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0221 06:19:59.741786   109 infer.h:431] tid:109 Loading clone model ...
+I0221 06:19:59.743327   109 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0221 06:19:59.743360   109 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0221 06:19:59.743376   109 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0221 06:19:59.747248   103 server.cpp:1046] Server[baidu::paddle_serving::predictor::general_model::GeneralModelServiceImpl] is serving on port=9494.
+I0221 06:19:59.747283   103 server.cpp:1049] Check out http://3721b56fa86a:9494 in web browser.
+I0221 06:19:59.767699   109 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0221 06:19:59.768098   109 infer.h:471] tid:109 clone caches done
+W0221 06:19:59.768119   109 infer.h:478] [109] Reload clone model and cube cache done. switching to current_idx[0]
+W0221 06:19:59.768163   109 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0221 06:19:59.768183   109 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0221 06:19:59.768206   110 infer.h:431] tid:110 Loading clone model ...
+I0221 06:19:59.769641   110 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0221 06:19:59.769661   110 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0221 06:19:59.769670   110 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0221 06:19:59.790437   110 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0221 06:19:59.790822   110 infer.h:471] tid:110 clone caches done
+W0221 06:19:59.790843   110 infer.h:478] [110] Reload clone model and cube cache done. switching to current_idx[0]
+W0221 06:19:59.790885   110 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0221 06:19:59.790905   110 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+W0221 06:19:59.790940   107 infer.h:431] tid:107 Loading clone model ...
+I0221 06:19:59.792313   107 naive_executor.cc:98] ---  skip [feed], feed -> im_shape
+I0221 06:19:59.792337   107 naive_executor.cc:98] ---  skip [feed], feed -> im_info
+I0221 06:19:59.792351   107 naive_executor.cc:98] ---  skip [feed], feed -> image
+I0221 06:19:59.813130   107 naive_executor.cc:98] ---  skip [concat_1.tmp_0], fetch -> fetch
+W0221 06:19:59.813557   107 infer.h:471] tid:107 clone caches done
+W0221 06:19:59.813582   107 infer.h:478] [107] Reload clone model and cube cache done. switching to current_idx[0]
+W0221 06:19:59.813596   107 infer.cpp:255] Succ thrd initialize version engine: 18446744073709551615
+W0221 06:19:59.813607   107 infer.cpp:441] Succ thrd initialize engine, name: general_infer_0
+I0221 06:20:08.232440   105 server.cpp:151] Begin reload framework...
+W0221 06:20:08.232504   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:20:08.232532   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:20:18.232694   105 server.cpp:151] Begin reload framework...
+W0221 06:20:18.232792   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:20:18.232827   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:20:28.233004   105 server.cpp:151] Begin reload framework...
+W0221 06:20:28.233057   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:20:28.233108   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:20:38.233239   105 server.cpp:151] Begin reload framework...
+W0221 06:20:38.233311   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:20:38.233335   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:20:48.233479   105 server.cpp:151] Begin reload framework...
+W0221 06:20:48.233530   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:20:48.233546   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:20:58.233693   105 server.cpp:151] Begin reload framework...
+W0221 06:20:58.233772   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:20:58.233793   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:21:08.233999   105 server.cpp:151] Begin reload framework...
+W0221 06:21:08.234074   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:21:08.234094   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:21:18.234321   105 server.cpp:151] Begin reload framework...
+W0221 06:21:18.234373   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:21:18.234388   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:21:28.234768   105 server.cpp:151] Begin reload framework...
+W0221 06:21:28.234911   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:21:28.234967   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:21:38.235095   105 server.cpp:151] Begin reload framework...
+W0221 06:21:38.235150   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:21:38.235167   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:21:48.235376   105 server.cpp:151] Begin reload framework...
+W0221 06:21:48.235648   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:21:48.235709   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:21:58.235886   105 server.cpp:151] Begin reload framework...
+W0221 06:21:58.235975   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:21:58.236008   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:22:08.236135   105 server.cpp:151] Begin reload framework...
+W0221 06:22:08.236189   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:22:08.236205   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:22:18.236445   105 server.cpp:151] Begin reload framework...
+W0221 06:22:18.236497   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:22:18.236514   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:22:28.236793   105 server.cpp:151] Begin reload framework...
+W0221 06:22:28.236932   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:22:28.236990   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:22:38.237145   105 server.cpp:151] Begin reload framework...
+W0221 06:22:38.237195   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:22:38.237213   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:22:48.237403   105 server.cpp:151] Begin reload framework...
+W0221 06:22:48.237447   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:22:48.237462   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:22:58.237690   105 server.cpp:151] Begin reload framework...
+W0221 06:22:58.237744   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:22:58.237761   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:23:08.238113   105 server.cpp:151] Begin reload framework...
+W0221 06:23:08.238240   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:23:08.238299   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:23:18.238591   105 server.cpp:151] Begin reload framework...
+W0221 06:23:18.238726   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:23:18.238780   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:23:28.239051   105 server.cpp:151] Begin reload framework...
+W0221 06:23:28.239508   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:23:28.239588   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:23:38.239909   105 server.cpp:151] Begin reload framework...
+W0221 06:23:38.240048   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:23:38.240192   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:23:48.240476   105 server.cpp:151] Begin reload framework...
+W0221 06:23:48.240609   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:23:48.240664   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:23:58.240978   105 server.cpp:151] Begin reload framework...
+W0221 06:23:58.241125   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:23:58.241184   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:24:08.241478   105 server.cpp:151] Begin reload framework...
+W0221 06:24:08.241624   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:24:08.241683   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:24:18.241921   105 server.cpp:151] Begin reload framework...
+W0221 06:24:18.242029   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:24:18.242069   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:24:28.242303   105 server.cpp:151] Begin reload framework...
+W0221 06:24:28.242449   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:24:28.242702   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:24:38.243039   105 server.cpp:151] Begin reload framework...
+W0221 06:24:38.243227   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:24:38.243304   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:24:48.243577   105 server.cpp:151] Begin reload framework...
+W0221 06:24:48.243713   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:24:48.243921   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:24:58.244135   105 server.cpp:151] Begin reload framework...
+W0221 06:24:58.244192   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:24:58.244208   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:25:08.244369   105 server.cpp:151] Begin reload framework...
+W0221 06:25:08.244421   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:25:08.244437   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:25:18.244611   105 server.cpp:151] Begin reload framework...
+W0221 06:25:18.244666   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:25:18.244683   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:25:28.244999   105 server.cpp:151] Begin reload framework...
+W0221 06:25:28.245128   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:25:28.245183   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:25:38.245410   105 server.cpp:151] Begin reload framework...
+W0221 06:25:38.245472   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:25:38.245493   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:25:48.245884   105 server.cpp:151] Begin reload framework...
+W0221 06:25:48.246024   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:25:48.246079   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:25:58.246358   105 server.cpp:151] Begin reload framework...
+W0221 06:25:58.246486   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:25:58.246539   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:26:08.246798   105 server.cpp:151] Begin reload framework...
+W0221 06:26:08.246868   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:26:08.246893   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:26:18.247129   105 server.cpp:151] Begin reload framework...
+W0221 06:26:18.247259   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:26:18.247313   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:26:28.247587   105 server.cpp:151] Begin reload framework...
+W0221 06:26:28.247653   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:26:28.247669   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:26:38.247973   105 server.cpp:151] Begin reload framework...
+W0221 06:26:38.248159   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:26:38.248252   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:26:48.248550   105 server.cpp:151] Begin reload framework...
+W0221 06:26:48.248750   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:26:48.248817   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:26:58.248999   105 server.cpp:151] Begin reload framework...
+W0221 06:26:58.249056   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:26:58.249073   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:27:08.249222   105 server.cpp:151] Begin reload framework...
+W0221 06:27:08.249282   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:27:08.249300   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:27:18.249728   105 server.cpp:151] Begin reload framework...
+W0221 06:27:18.249863   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:27:18.249992   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:27:28.250414   105 server.cpp:151] Begin reload framework...
+W0221 06:27:28.250470   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:27:28.250494   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:27:38.250712   105 server.cpp:151] Begin reload framework...
+W0221 06:27:38.250842   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:27:38.250897   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:27:48.251211   105 server.cpp:151] Begin reload framework...
+W0221 06:27:48.251446   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:27:48.251567   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:27:58.251812   105 server.cpp:151] Begin reload framework...
+W0221 06:27:58.251929   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:27:58.251976   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:28:08.252262   105 server.cpp:151] Begin reload framework...
+W0221 06:28:08.252318   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:28:08.252336   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:28:18.252485   105 server.cpp:151] Begin reload framework...
+W0221 06:28:18.252554   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:28:18.252573   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:28:28.252768   105 server.cpp:151] Begin reload framework...
+W0221 06:28:28.252830   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:28:28.252851   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:28:38.253006   105 server.cpp:151] Begin reload framework...
+W0221 06:28:38.253059   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:28:38.253077   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:28:48.253439   105 server.cpp:151] Begin reload framework...
+W0221 06:28:48.253579   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:28:48.253635   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:28:58.253780   105 server.cpp:151] Begin reload framework...
+W0221 06:28:58.253837   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:28:58.253856   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:29:08.254165   105 server.cpp:151] Begin reload framework...
+W0221 06:29:08.254384   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:29:08.254451   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:29:18.254649   105 server.cpp:151] Begin reload framework...
+W0221 06:29:18.254704   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:29:18.254746   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:29:28.254962   105 server.cpp:151] Begin reload framework...
+W0221 06:29:28.255110   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:29:28.255168   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:29:38.255643   105 server.cpp:151] Begin reload framework...
+W0221 06:29:38.255779   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:29:38.255834   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:29:48.256072   105 server.cpp:151] Begin reload framework...
+W0221 06:29:48.256211   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:29:48.256270   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:29:58.256479   105 server.cpp:151] Begin reload framework...
+W0221 06:29:58.256788   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:29:58.256848   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:30:08.257154   105 server.cpp:151] Begin reload framework...
+W0221 06:30:08.257297   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:30:08.257352   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:30:18.257525   105 server.cpp:151] Begin reload framework...
+W0221 06:30:18.257580   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:30:18.257596   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:30:28.258090   105 server.cpp:151] Begin reload framework...
+W0221 06:30:28.258225   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:30:28.258280   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:30:38.258646   105 server.cpp:151] Begin reload framework...
+W0221 06:30:38.258778   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:30:38.258829   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:30:48.259497   105 server.cpp:151] Begin reload framework...
+W0221 06:30:48.259640   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:30:48.259699   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:30:58.259853   105 server.cpp:151] Begin reload framework...
+W0221 06:30:58.259929   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:30:58.259963   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:31:08.260179   105 server.cpp:151] Begin reload framework...
+W0221 06:31:08.260233   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:31:08.260250   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:31:18.260433   105 server.cpp:151] Begin reload framework...
+W0221 06:31:18.260489   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:31:18.260506   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:31:28.260787   105 server.cpp:151] Begin reload framework...
+W0221 06:31:28.260870   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:31:28.260898   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:31:38.261090   105 server.cpp:151] Begin reload framework...
+W0221 06:31:38.261147   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:31:38.261164   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:31:48.261420   105 server.cpp:151] Begin reload framework...
+W0221 06:31:48.261554   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:31:48.261698   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:31:58.261988   105 server.cpp:151] Begin reload framework...
+W0221 06:31:58.262069   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:31:58.262099   105 manager.h:131] Finish reload 1 workflow(s)
+I0221 06:32:08.262341   105 server.cpp:151] Begin reload framework...
+W0221 06:32:08.262395   105 infer.cpp:287] Succ reload version engine: 18446744073709551615
+I0221 06:32:08.262413   105 manager.h:131] Finish reload 1 workflow(s)
