@@ -1,0 +1,30 @@
+use_python_inference: false
+mode: fluid
+draw_threshold: 0.5
+metric: COCO
+arch: RCNN
+min_subgraph_size: 40
+with_background: true
+Preprocess:
+- is_channel_first: false
+  is_scale: false
+  mean:
+  - 102.9801
+  - 115.9465
+  - 122.7717
+  std:
+  - 1.0
+  - 1.0
+  - 1.0
+  type: Normalize
+- channel_first: true
+  to_bgr: false
+  type: Permute
+- stride: 32
+  type: PadStride
+label_list:
+- zhen_kong
+- ca_shang
+- zang_wu
+- zhe_zhou
+- background
